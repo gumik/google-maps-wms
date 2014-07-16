@@ -6,7 +6,9 @@ WMS service for downloading map tiles from [Google Maps](http://maps.google.com)
 Usage
 -----
 
-Just run it with `python google_maps_wms.py`. Service will listen on port 8000. You can optionally set your Google Developers API Key in `googleApiKey` variable inside the source code.
+Just run it with `python google_maps_wms.py`. Service will listen on port 8080. You can optionally set your Google Developers API Key in `googleApiKey` variable inside the source code.
+
+Add a new WMS service to JOSM with the following address: wms:http://localhost:8080?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=basic&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}
 
 Note
 ----
